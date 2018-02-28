@@ -16,8 +16,5 @@ int main()
     }else{
         cout<<"Its not a palindrome"<<endl;
     }
-
     return 0;
 }
-
-
