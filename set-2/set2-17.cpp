@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int i,temp1,temp,count = 0,rev = 0,rem = 0,ans = 0,srev;
+    int i,temp1,temp,count = 0,rev = 0,rem = 0,ans = 1,finalAns = 0;
     cout<<"Enter a number"<<endl;
     cin>>i;
     temp = i;
@@ -15,11 +15,16 @@ int main()
     temp1 = i;
     for (int j = 1;j <= count;j++){
         while(temp1 != 0){
-        rem = temp1 % 10;
-        rev = rem*10;
-        temp1 /= 10;
+            rem = temp1 % 10;
+            temp1 = temp1/10;
+            ans *= rem;
         }
-        temp1 *= temp1;
     }
-    cout<<temp1;
+    finalAns += ans;
+    if(finalAns == i){
+        cout<<"Its an armstrong"<<finalAns;
+    }else{
+        cout<<"Its not an armstrong"<<finalAns;
+    }
+    
 }
