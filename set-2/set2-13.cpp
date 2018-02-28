@@ -18,6 +18,5 @@ int main()
     }else{
         cout<<"Its not a prime number";
     }
-
     return 0;
 }
