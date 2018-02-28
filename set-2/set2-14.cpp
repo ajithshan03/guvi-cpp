@@ -9,7 +9,7 @@ int main()
     cin>>i;
     cout<<"Enter the ending number"<<endl;
     cin>>j;
-    cout<<"The odd numbers between "<<i<<" and "<<j<<" is..."<<endl;
+    cout<<"The odd numbers between "<<i<<" and "<<j<<" are..."<<endl;
     for(k = i+1;k < j;k++){
         if(k%2 != 0){
             cout<<k<<" ";
