@@ -10,7 +10,7 @@ int main()
     cout<<"Enter the ending number"<<endl;
     cin>>j;
     cout<<"The prime numbers between "<<i<<" and "<<j<<" are..."<<endl;
-    for(k = i;k < j;k++){
+    for(k = i+1;k < j;k++){
         int set = 0;
         for(int m = 2;m < k;m++){
             if(k % m == 0){
