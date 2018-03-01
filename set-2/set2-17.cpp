@@ -13,18 +13,18 @@ int main()
         count++;
     }
     temp1 = i;
-    for (int j = 1;j <= count;j++){
         while(temp1 != 0){
             rem = temp1 % 10;
             temp1 = temp1/10;
-            ans *= rem;
-        }
+            for (int j = 1;j <= count;j++){
+                ans *= rem;
+            }
+        finalAns += ans;
+        ans = 1;
     }
-    finalAns += ans;
     if(finalAns == i){
-        cout<<"Its an armstrong"<<finalAns;
+        cout<<"Its an armstrong"<<endl;
     }else{
-        cout<<"Its not an armstrong"<<finalAns;
+        cout<<"Its not an armstrong"<<endl;
     }
-    
 }
