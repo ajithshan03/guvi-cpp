@@ -3,12 +3,12 @@ using namespace std;
 
 int main()
 {
-    string str;
+    string a
     int count = 1,i;
     cout << "Enter a sentance: ";
-    getline(cin, str);
+    getline(cin, a);
     for(i = 0;i <= str.length()-1;i++){
-        if(str[i] == '.'){
+        if(a[i] == '.'){
             count++;
         }
     }
