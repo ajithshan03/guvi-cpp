@@ -14,7 +14,6 @@ for(int i = 0;i <= a.length()-1;i++){
         break;
     }
 }
-
 if(set == 0){
     cout<<"The string is numeric"<<endl; 
 }else{
