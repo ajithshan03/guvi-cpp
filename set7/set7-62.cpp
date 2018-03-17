@@ -1,16 +1,23 @@
 #include <iostream>
-#include <string>
-#include <bitset>
 using namespace std;
 
 int main()
 {
     string S;
-    int k;
+    int flag = 0;
     cout<<"Enter the string:";
     cin>>S;
     for(int i = 0; i < S.length()-1; i++){
-        cout<<bitset<8>(S[i])<<endl;
+        if(S[i] == 0){
+            flag = 1;
+        } else {
+            flag = 0;
+        }
+    }
+    if(flag == 0){
+        cout<<"yes";
+    } else {
+        cout<<"no";
     }
     return 0;
 }
