@@ -1,15 +1,16 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main()
 {
-    int i;
+    int i,n;
     cin>>i;
-    if(i%2 == 0){
-        i *= 2;
-    } else {
-        i++;
-        i *= 2;
+    for(int j = 1; j < i; j++){
+        n = pow(2,j);
+        if(i < n){
+            cout<<n;
+            break;
+        }
     }
-    cout<<i;
     return 0;
 }
