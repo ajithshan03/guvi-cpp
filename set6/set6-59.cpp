@@ -9,10 +9,7 @@ int main()
         cin>>a[i];
     }
     for(int i = 0;i < 10;i++){
-        cout<<"....."<<endl;
-        cout<<a[i];
-        cout<<"....."<<endl;
-        if(a[i] < max){
+        if(a[i] > max){
             max = a[i];
         }
     }
