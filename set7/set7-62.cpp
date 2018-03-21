@@ -8,16 +8,17 @@ int main()
     cout<<"Enter the string:";
     cin>>S;
     for(int i = 0; i < S.length()-1; i++){
-        if(S[i] == 0){
+        if(S[i] == '0' || S[i] == '1'){
             flag = 1;
         } else {
             flag = 0;
+            break;
         }
     }
     if(flag == 0){
-        cout<<"yes";
+        cout<<"No";
     } else {
-        cout<<"no";
+        cout<<"yes";
     }
     return 0;
 }
