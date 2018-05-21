@@ -1,12 +1,13 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 int main()
 {
-    int a,b;
+    double a,b;
     cout<<"Enter the two numbers A and B";
     cin>>a>>b;
-    int area = a*b;
-    cout<<"Area of the farm is :"<<area;
+    double area = a*b;
+    cout<<"Area of the farm is :"<<setprecision(5)<<area;
 
     return 0;
 }
