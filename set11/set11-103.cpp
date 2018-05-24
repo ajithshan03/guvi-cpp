@@ -1,5 +1,7 @@
 #include<iostream>
+
 using namespace std;
+
 int main()
 {
   string str;
@@ -11,5 +13,8 @@ int main()
     }
   }
   cout<<str;
+  
   return 0;
 }
+
+
